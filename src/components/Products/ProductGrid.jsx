@@ -32,7 +32,7 @@ export function ProductGrid() {
           return (
             <ProductCard
               key={el.id}
-              url={el.url}
+              url={el["url"]}
               header={el.header}
               description={el.description}
             />
