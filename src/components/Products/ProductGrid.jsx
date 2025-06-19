@@ -5,7 +5,7 @@ const products = [
     id: 1,
     header: "Горюче-смазочные материалы",
     description: "Чтобы смазать и поджечь",
-    url: "./src/assets/gsm.jpeg",
+    url: "../../assets/gsm.jpeg",
   },
   {
     id: 2,
