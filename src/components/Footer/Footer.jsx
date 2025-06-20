@@ -27,6 +27,23 @@ export function Footer() {
               Услуги
             </a>
           </li>
+          <li>
+            <div className="flex flex-col">
+              <a
+                href="tel:+79991111111"
+                className="hover:underline me-4 md:me-6"
+              >
+                +7-999-111-11-11
+              </a>
+              <a href=""></a>
+            </div>
+            <a
+              href="mailto:salesmanager@ievlevstore.ru"
+              className="hover:underline me-4 md:me-6"
+            >
+              salesmanager@ievlevstore.ru
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
