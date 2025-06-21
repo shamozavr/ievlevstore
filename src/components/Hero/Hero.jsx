@@ -1,7 +1,7 @@
 export function Hero() {
   return (
     <section className="h-screen bg-cover bg-no-repeat bg-[url('https://avatars.mds.yandex.net/get-altay/6203703/2a00000189fcaa6626fa3eb33f3f85b3d16c/XXL_height')] bg-gray-700 bg-blend-multiply">
-      <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+      <div className="px-4 mx-auto max-w-screen-xl text-center py-56 lg:py-80">
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
           Надёжные материалы для бесперебойной работы
         </h1>
