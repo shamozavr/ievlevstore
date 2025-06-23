@@ -14,7 +14,7 @@ export function ProductCard({ url, header, description }) {
   }, []);
 
   return isMobile ? (
-    <div className="bg-white border border-gray-200 rounded-lg shadow-sm min-w-full">
+    <div className="bg-white border border-gray-200 rounded-lg shadow-sm min-w-full relative">
       <div
         className="p-5"
         style={{
@@ -23,6 +23,17 @@ export function ProductCard({ url, header, description }) {
           backgroundPosition: "center",
         }}
       >
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background:
+              "linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2))",
+          }}
+        />
         <a href="#">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-white stroke-black drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             {header}
