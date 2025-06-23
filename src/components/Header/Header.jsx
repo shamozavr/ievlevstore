@@ -8,7 +8,7 @@ export function Header() {
   };
 
   return (
-    <nav className="w-full bg-white border-gray-200 top-0 absolute">
+    <nav className="w-full bg-white border-gray-200 top-0 fixed z-1">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
