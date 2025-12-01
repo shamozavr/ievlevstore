@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../../assets/logos/загруженное_bg-removed.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,17 +9,13 @@ export function Header() {
   };
 
   return (
-    <nav className="w-full bg-white border-gray-200 top-0 fixed z-1">
+    <nav className="w-full bg-white border-gray-200 top-0 fixed z-1 border-b">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap">
-            IevlevStore
-          </span>
+          <img src={logo} className="h-16" alt="Logo" />
+          {/* <span className="self-center text-2xl font-semibold whitespace-nowrap">
+            СП АРТЕЛЬ
+          </span> */}
         </a>
         <button
           data-collapse-toggle="navbar-default"
@@ -63,37 +60,37 @@ export function Header() {
             </li>
             <li className="flex items-center">
               <a
+                href="#features"
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              >
+                Услуги
+              </a>
+            </li>
+            <li className="flex items-center">
+              <a
                 href="#products"
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
               >
                 Товары
               </a>
             </li>
-            <li className="flex items-center">
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
-                Услуги
-              </a>
-            </li>
             <li>
               <div className="flex flex-col">
                 <a
-                  href="tel:+79991111111"
+                  href="tel:+78314101132"
                   className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                   aria-current="page"
                 >
-                  +7-999-111-11-11
+                  +7-831-410-11-32
                 </a>
                 <a href=""></a>
               </div>
               <a
-                href="mailto:salesmanager@ievlevstore.ru"
+                href="mailto:sp-artel@yandex.ru"
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 aria-current="page"
               >
-                salesmanager@ievlevstore.ru
+                sp-artel@yandex.ru
               </a>
             </li>
           </ul>
