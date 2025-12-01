@@ -7,7 +7,7 @@ export function Features() {
       title: "Покраска транспорта",
       titleHTML: (
         <>
-          Покраска <span className="font-bold text-yellow-400">транспорта</span>
+          Покраска <span className="font-bold text-yellow-300">транспорта</span>
         </>
       ),
       items: [
