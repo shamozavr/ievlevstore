@@ -21,7 +21,7 @@ export function Footer() {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
-          <div className="md:block">
+          <div className="lg:mx-auto md:block">
             <button
               className="md:hidden flex items-center justify-between w-full text-white mb-4"
               onClick={() => toggleSection("company")}
@@ -61,8 +61,52 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Bank Details */}
+          <div className="lg:mx-auto md:block">
+            <button
+              className="md:hidden flex items-center justify-between w-full text-white mb-4"
+              onClick={() => toggleSection("bank")}
+            >
+              <h3 className="text-white">Банковские реквизиты</h3>
+              <svg
+                className={`w-5 h-5 transition-transform ${
+                  openSections.bank ? "rotate-180" : ""
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <h3 className="text-white mb-4 hidden md:block">
+              Банковские реквизиты
+            </h3>
+            <div
+              className={`md:block ${
+                openSections.bank ? "block" : "hidden md:block"
+              }`}
+            >
+              <ul className="space-y-1">
+                <li>
+                  Банк: ВОЛГО-ВЯТСКИЙ БАНК
+                  <br />
+                  ПАО СБЕРБАНК
+                </li>
+                <li>БИК: 042202603</li>
+                <li>К/с: 30101810900000000603</li>
+                <li>Р/с: 40702810142710003553</li>
+              </ul>
+            </div>
+          </div>
+
           {/* Navigation */}
-          <div className="md:block">
+          <div className="lg:mx-auto md:block">
             <button
               className="md:hidden flex items-center justify-between w-full text-white mb-4"
               onClick={() => toggleSection("navigation")}
@@ -120,7 +164,7 @@ export function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="md:block">
+          <div className="lg:mx-auto md:block">
             <button
               className="md:hidden flex items-center justify-between w-full text-white mb-4"
               onClick={() => toggleSection("contacts")}
@@ -165,50 +209,6 @@ export function Footer() {
                     sp-artel@yandex.ru
                   </a>
                 </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Bank Details */}
-          <div className="md:block">
-            <button
-              className="md:hidden flex items-center justify-between w-full text-white mb-4"
-              onClick={() => toggleSection("bank")}
-            >
-              <h3 className="text-white">Банковские реквизиты</h3>
-              <svg
-                className={`w-5 h-5 transition-transform ${
-                  openSections.bank ? "rotate-180" : ""
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <h3 className="text-white mb-4 hidden md:block">
-              Банковские реквизиты
-            </h3>
-            <div
-              className={`md:block ${
-                openSections.bank ? "block" : "hidden md:block"
-              }`}
-            >
-              <ul className="space-y-1">
-                <li>
-                  Банк: ВОЛГО-ВЯТСКИЙ БАНК
-                  <br />
-                  ПАО СБЕРБАНК
-                </li>
-                <li>БИК: 042202603</li>
-                <li>К/с: 30101810900000000603</li>
-                <li>Р/с: 40702810142710003553</li>
               </ul>
             </div>
           </div>
