@@ -44,7 +44,9 @@ export function Features() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-gray-900 mb-4">Наши услуги</h2>
+          <h2 className="text-3xl md:text-3xl font-bold text-gray-800 mb-4">
+            Наши услуги
+          </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
             Мы специализируемся на нанесении защитных и декоративных покрытий на
             сложные поверхности, где важна точная технология.

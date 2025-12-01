@@ -57,22 +57,4 @@ export function ProductCard({ url, header, description }) {
       </div>
     </div>
   );
-
-  // return (
-  //   <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm max-sm:min-w-full">
-  //     <img
-  //       className="rounded-t-lg w-full h-60 max-sm:hidden"
-  //       src={url}
-  //       alt=""
-  //     />
-  //     <div className="p-5">
-  //       <a href="#">
-  //         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-  //           {header}
-  //         </h5>
-  //       </a>
-  //       <p className="mb-3 font-normal text-gray-700">{description}</p>
-  //     </div>
-  //   </div>
-  // );
 }

@@ -1,5 +1,4 @@
 import { ProductCard } from "./ProductCard/ProductCard";
-// import products from "../../../public/assets/images.json";
 import img1 from "../../assets/images/gsm.jpeg";
 import img2 from "../../assets/images/organosilicon_liquids.jfif";
 import img3 from "../../assets/images/paint_and_varnish_materials.jfif";
@@ -69,15 +68,6 @@ const products = [
 ];
 
 export function ProductGrid() {
-  // console.log(products);
-  // console.log(img1);
-  // console.log(img2);
-  // console.log(img3);
-  // console.log(img4);
-  // console.log(img5);
-  // console.log(img6);
-  // console.log(img7);
-  // console.log(img8);
   return (
     <div
       id="products"
