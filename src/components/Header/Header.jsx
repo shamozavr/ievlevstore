@@ -17,6 +17,24 @@ export function Header() {
             СП АРТЕЛЬ
           </span> */}
         </a>
+
+        <div className="md:hidden flex flex-col font-medium">
+          <a
+            href="tel:+78314101132"
+            className="block text-center px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+            aria-current="page"
+          >
+            +7-831-410-11-32
+          </a>
+          <a
+            href="mailto:sp-artel@yandex.ru"
+            className="block text-center px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+            aria-current="page"
+          >
+            sp-artel@yandex.ru
+          </a>
+        </div>
+
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -83,15 +101,14 @@ export function Header() {
                 >
                   +7-831-410-11-32
                 </a>
-                <a href=""></a>
+                <a
+                  href="mailto:sp-artel@yandex.ru"
+                  className="block px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                  aria-current="page"
+                >
+                  sp-artel@yandex.ru
+                </a>
               </div>
-              <a
-                href="mailto:sp-artel@yandex.ru"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                aria-current="page"
-              >
-                sp-artel@yandex.ru
-              </a>
             </li>
           </ul>
         </div>

@@ -7,7 +7,7 @@ export function Hero() {
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       <div className="px-4 mx-auto max-w-screen-xl text-center">
-        <h1 className="mb-8 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+        <h1 className="mb-8 mt-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
           Точная покраска <br></br> Комплексное снабжение
         </h1>
         <p className="mb-4 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">

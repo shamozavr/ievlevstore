@@ -86,8 +86,9 @@ export function ProductGrid() {
       <h2 className="text-3xl md:text-3xl font-bold text-gray-800 mb-4">
         Наша продукция
       </h2>
-      <p className="text-gray-600 text-base md:text-lg mb-6 md:mb-8">
-        Только от проверенных поставщиков
+      <p className="text-center text-gray-600 text-base md:text-lg mb-6 md:mb-8">
+        Только от проверенных поставщиков <br />C полным пакетом
+        сопроводительных документов
       </p>
       <div className="flex w-full justify-around gap-4 mx-auto flex-wrap">
         {products.map((el) => {

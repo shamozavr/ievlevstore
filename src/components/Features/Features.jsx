@@ -5,6 +5,11 @@ export function Features() {
     {
       icon: Truck,
       title: "Покраска транспорта",
+      titleHTML: (
+        <>
+          Покраска <span className="font-bold text-yellow-400">транспорта</span>
+        </>
+      ),
       items: [
         "Полная и локальная покраска автомобилей",
         "Покраска грузовиков, автобусов и сельхозтехники",
@@ -61,10 +66,12 @@ export function Features() {
                 >
                   <Icon className="text-white" size={28} />
                 </div>
-
                 {/* Title */}
-                <h3 className="text-gray-900 mb-6">{feature.title}</h3>
-
+                {feature.titleHTML ? (
+                  feature.titleHTML
+                ) : (
+                  <h3 className="text-gray-900 mb-6">{feature.title}</h3>
+                )}
                 {/* Items List */}
                 <ul className="space-y-4">
                   {feature.items.map((item, itemIndex) => (
