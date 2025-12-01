@@ -3,6 +3,7 @@ import heroImage from "../../assets/images/hero.jpg";
 export function Hero() {
   return (
     <section
+      id="hero"
       className="flex items-center min-h-screen bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
