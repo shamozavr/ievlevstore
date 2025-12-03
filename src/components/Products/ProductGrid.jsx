@@ -1,12 +1,12 @@
 import { ProductCard } from "./ProductCard/ProductCard";
-import img1 from "../../assets/images/gsm.jpeg";
-import img2 from "../../assets/images/organosilicon_liquids.jfif";
-import img3 from "../../assets/images/paint_and_varnish_materials.jfif";
-import img4 from "../../assets/images/glue.jfif";
-import img5 from "../../assets/images/el_isolate.jfif";
-import img6 from "../../assets/images/tools.jfif";
-import img7 from "../../assets/images/RTI_3.jfif";
-import img8 from "../../assets/images/cloack.jfif";
+import img1 from "../../assets/images/products/gsm.jpeg";
+import img2 from "../../assets/images/products/organosilicon_liquids.jfif";
+import img3 from "../../assets/images/products/paint_and_varnish_materials.jfif";
+import img4 from "../../assets/images/products/glue.jfif";
+import img5 from "../../assets/images/products/el_isolate.jfif";
+import img6 from "../../assets/images/products/tools.jfif";
+import img7 from "../../assets/images/products/RTI_3.jfif";
+import img8 from "../../assets/images/products/cloack.jfif";
 
 const products = [
   {

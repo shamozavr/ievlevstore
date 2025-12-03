@@ -1,44 +1,34 @@
-import { Truck, Wrench, Waves } from "lucide-react";
+import { ProductCard } from "../Products/ProductCard/ProductCard";
+import feature_1 from "../../assets/images/features/feature_1-1.jpeg";
+import feature_2 from "../../assets/images/features/feature_2-1.jpeg";
+import feature_3 from "../../assets/images/features/feature_3-1.jpeg";
+const features = [
+  {
+    url: feature_1,
+    title: "Покраска транспорта",
+    titleHTML: (
+      <>
+        Покраска <span className="text-yellow-300">транспорта</span>
+      </>
+    ),
+    description:
+      "Полная и локальная покраска автомобилей. Покраска грузовиков, автобусов и сельхозтехники. Защитное покрытие для прицепов.",
+  },
+  {
+    url: feature_2,
+    title: "Покраска металлических изделий",
+    description:
+      "Антикоррозийная обработка. Декоративная покраска конструкций и изделий. Порошковая покраска.",
+  },
+  {
+    url: feature_3,
+    title: "Покраска стеклопластика",
+    description:
+      "Покраска кузовных деталей из стеклопластика. Покрытие для лодок и катеров, стойкое к воде и УФ-излучению. Покраска любых изделий из композитных материалов.",
+  },
+];
 
 export function Features() {
-  const features = [
-    {
-      icon: Truck,
-      title: "Покраска транспорта",
-      titleHTML: (
-        <>
-          Покраска <span className="font-bold text-yellow-300">транспорта</span>
-        </>
-      ),
-      items: [
-        "Полная и локальная покраска автомобилей",
-        "Покраска грузовиков, автобусов и сельхозтехники",
-        "Защитное покрытие для прицепов",
-      ],
-      color: "bg-blue-500",
-    },
-    {
-      icon: Wrench,
-      title: "Покраска металлических изделий",
-      items: [
-        "Антикоррозийная обработка",
-        "Декоративная покраска конструкций и изделий",
-        "Порошковая покраска",
-      ],
-      color: "bg-orange-500",
-    },
-    {
-      icon: Waves,
-      title: "Покраска стеклопластика",
-      items: [
-        "Покраска кузовных деталей из стеклопластика",
-        "Покрытие для лодок и катеров, стойкое к воде и УФ-излучению",
-        "Покраска любых изделий из композитных материалов",
-      ],
-      color: "bg-teal-500",
-    },
-  ];
-
   return (
     <section id="features" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
@@ -55,47 +45,14 @@ export function Features() {
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <div
-                key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                {/* Icon */}
-                <div
-                  className={`${feature.color} w-14 h-14 rounded-xl flex items-center justify-center mb-6`}
-                >
-                  <Icon className="text-white" size={28} />
-                </div>
-                {/* Title */}
-                {feature.titleHTML ? (
-                  feature.titleHTML
-                ) : (
-                  <h3 className="text-gray-900 mb-6">{feature.title}</h3>
-                )}
-                {/* Items List */}
-                <ul className="space-y-4">
-                  {feature.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-start">
-                      <svg
-                        className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                      <span className="text-gray-700">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            );
-          })}
+          {features.map((feature, index) => (
+            <ProductCard
+              key={index}
+              url={feature.url}
+              header={feature.titleHTML ? feature.titleHTML : feature.title}
+              description={feature.description}
+            />
+          ))}
         </div>
 
         {/* Bottom CTA */}

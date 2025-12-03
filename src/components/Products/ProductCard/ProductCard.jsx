@@ -11,6 +11,9 @@ export function ProductCard({ url, header, description }) {
 
     // Добавляем слушатель события resize
     window.addEventListener("resize", handleResize);
+
+    // Очистка при размонтировании
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return isMobile ? (
@@ -46,7 +49,10 @@ export function ProductCard({ url, header, description }) {
     </div>
   ) : (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
-      <img className="rounded-t-lg w-full h-60" src={url} alt="" />
+      <div
+        className="rounded-t-lg w-full h-60 bg-cover bg-no-repeat bg-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+        style={{ backgroundImage: `url(${url})` }}
+      ></div>
       <div className="p-5">
         <a href="#">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
