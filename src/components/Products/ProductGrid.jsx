@@ -7,6 +7,7 @@ import img5 from "../../assets/images/products/el_isolate.jfif";
 import img6 from "../../assets/images/products/tools.jfif";
 import img7 from "../../assets/images/products/RTI_3.jfif";
 import img8 from "../../assets/images/products/cloack.jfif";
+import img9 from "../../assets/images/products/chemical.jpeg";
 
 const products = [
   {
@@ -34,7 +35,7 @@ const products = [
     id: 4,
     header: "Клеевые материалы",
     description:
-      "Промышленные клеи, герметики и адгезивы различного назначения и состава",
+      "Промышленные клеи, смолы, герметики и адгезивы различного назначения и состава",
     url: img4,
   },
   {
@@ -64,6 +65,12 @@ const products = [
     description:
       "Специализированные ткани для промышленного, фильтровального и изоляционного применения",
     url: img8,
+  },
+  {
+    id: 9,
+    header: "Химические реактивы",
+    description: "Химические реактивы, кислоты, щёлочи и растворы",
+    url: img9,
   },
 ];
 
