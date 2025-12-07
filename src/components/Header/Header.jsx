@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../assets/logos/загруженное_bg-removed.png";
+import logo from "../../assets/logos/logo.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
